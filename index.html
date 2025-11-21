@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz With T</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="start-screen" id="startScreen">
+    <h1>Quiz With T</h1>
+    <button onclick="startQuiz()">Start Quiz</button>
+</div>
+
+<div class="quiz-container hidden" id="quizBox">
+    <h2 id="question"></h2>
+    <div id="answers"></div>
+    <button id="nextBtn" class="hidden" onclick="nextQuestion()">Next</button>
+</div>
+
+<div class="result-screen hidden" id="resultBox">
+    <h1>Your Score:</h1>
+    <h2 id="score"></h2>
+    <button onclick="restartQuiz()">Restart</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
